@@ -1,0 +1,21 @@
+{{!-- hacemos recorrido y hacemos el llamado a producto, mainsection llama a producto, pasandole como argumento de cada producto pero quien pita es productos --}}
+
+<h1 class="position-absolute top-40 start-50 translate-middle text-center" style="font-size: 2rem; width: 100%;margin-top: 40px;">Bienvenido al mercardo WEB, seleccione sus productos</h1>
+
+    {{> producto }}
+
+    {{#each data}}
+        <div>
+            <h1>{{nombre}}</h1>
+            <img src="{{imagen}}" alt="{{descripcion}}">
+        </div>
+    {{/each}}
+
+
+
+{{!-- <div class="card">
+  <h2>{{data.nombre}}</h2>
+  <img style="width: 200px;height: 200px;" src="{{data.imagen}}" alt="{{nombre}}">
+  <p>{{data.descripcion}}</p>
+</div> --}}
+
