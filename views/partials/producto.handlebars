@@ -1,15 +1,18 @@
-aca va el product
+<style>
+.tituloProducto {
+  text-align: center;
 
-{{!-- {{> productoMercado }} --}}
+}
+  img{
+display: block;
+margin: auto;
+  }
+</style>
 
+{{!-- estructura para recorrer e imprimir  --}}
 
-
-
-      {{!-- {{data}} --}}
-
-
-
-
-
-
-
+          
+<div class="col-4">
+  <h3 class="tituloProducto">{{producto}}</h3>
+  <img class="img" src="{{producto}}.png" alt="{{producto}}" />
+</div>
