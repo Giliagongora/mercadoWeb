@@ -33,6 +33,7 @@ app.use("/js", express.static(__dirname + "/node_modules/bootstrap/dist/js"));
 app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"));
 // Definir la ruta de los archivos estáticos (para imágenes)
 app.use(express.static(__dirname + '/img'));
+app.use("/frontend", express.static(__dirname + "/frontend"));
 
 // Creación de ruta raíz del servidor, por defecto buscará main.handlebars
 // app.get("/", function (req, res)  {
