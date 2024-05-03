@@ -1,7 +1,7 @@
 {{!-- Acá se maneja la modal  --}}
 {{!-- Creamos en nav con el icono carrito --}}
 {{!-- #007203 --}}
-<nav class="navbar bg-success " style="height: 80px;">
+<nav class="navbar bg-success " style="height: 80px;" id="carro" data-bs-toggle="modal" data-bs-target="#exampleModal">
   <div class="container-fluid  position-relative">
     <a class="navbar-brand position-absolute top-50 start-50 translate-middle lh-1" href="#" style="color: #ffffff;">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
@@ -14,3 +14,37 @@
 
 
 {{!-- Crear modal acá  --}}
+
+<!-- Button trigger modal -->
+{{!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> --}}
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Productos en carro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  div.modal-body img {
+    width: 30%;
+    display: inline-block;
+  }
+</style>

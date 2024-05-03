@@ -4,10 +4,6 @@ const exphbs = require("express-handlebars");
 
 const app = express();
 
-// Ruta para test: 200
-app.get("/saludo", (req, res) => {
-  res.send("¡Hola, mundo!");
-});
 
 // Definir Handlebars como motor de plantillas
 app.set("view engine", "handlebars");
@@ -47,33 +43,6 @@ app.get('/', function (req, res)  {
   res.render('main', {
     layout: 'main',
     producto: ["Banana", "Cebollas", "Lechuga", "Papas", "Pimenton", "Tomate"]
-  //   productos: [
-  //   {
-  //     nombre: 'Banana',
-  //     img: '/banana.png',
-  //     descripcion: 'Banana'
-  //   },{
-  //     nombre: 'Cebollas',
-  //     img: '/cebollas.png',
-  //     descripcion: 'Cebollas'
-  //   },{
-  //     nombre: 'Pimentón',
-  //     img: '/pimenton.png',
-  //     descripcion: 'Pimentón'
-  //   },{
-  //     nombre: 'Papas',
-  //     imagen: '/papas.png',
-  //     descripcion: 'Papas'
-  //   },{
-  //     nombre: 'Lechuga',
-  //     img: '/lechuga.png',
-  //     descripcion: 'Lechuga'
-  //   },{
-  //     nombre: 'Tomate',
-  //     img: '/tomate.png',
-  //     descripcion: 'Tomate'
-  //   }
-  // ]
  
 });
 
